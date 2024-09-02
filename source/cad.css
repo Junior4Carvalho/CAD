@@ -1,0 +1,1301 @@
+@import url('https://ftons.googleapis.com/css2?font=Inter:wght@300;400;500;600;700&display=swap'); 
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    
+
+
+}
+
+*::selection{
+
+    background-color: rgb(50, 194, 237);
+    color: white;
+}
+
+
+body{
+
+    background-color: #dddbdb;
+    overflow-x: hidden;
+}
+
+
+.whatsapp-link {
+
+
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 70px;
+    right: 25px;
+    background-color: rgb(44, 231, 31);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+.up{
+    
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    opacity: 100%;
+
+   
+}
+
+
+.ct{
+    padding: 5px;
+    margin: 5px 10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+
+}
+.ct img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.ct span{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.ct a{
+
+    color: white;
+    text-transform: lowercase;
+ 
+}
+
+header{
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1200px;
+
+}
+
+.container{
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2%;
+
+}
+
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin: 40px 0px;
+    
+}
+
+nav ul{
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+nav ul a{
+
+    color: rgb(255, 255, 255);
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    font-weight: 550;
+
+}
+
+nav img{
+    width: 100px;
+}
+
+nav ul a:not(.btn):after{
+
+    content: "";
+    background-color:  #ffffff;;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 4px auto;
+    transition: .5s;
+
+}
+
+nav ul a:hover::after{
+
+    width: 100%;
+    
+}
+
+
+
+.banner{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 100px;
+}
+
+
+.banner .banner-text{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 100px 90px;
+    gap: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.banner .banner-text h1{
+    
+    font-size: 70px;
+}
+
+
+.banner .banner-text p{
+
+    font-size: 25px;
+
+}
+
+.banner .banner-text a{
+
+    font-size: 25px;
+   
+}
+
+
+
+.btn{
+
+    background-color: rgb(31, 174, 231);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .3s;
+    animation: animate-outline 1s ease-out infinite;
+}
+
+
+
+.btn:hover{
+
+    background-color: #4f9cf9;
+    
+
+}
+
+
+.objectivo{
+
+    width: 100%;
+    height: 600px;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px 0px;
+    margin: 200px 0px;
+
+}
+
+
+.objectivo .objectivo-img{
+    width: 50%;
+    
+
+}
+
+.objectivo .objectivo-img img{
+    width: 600px;
+    transition: .3s;
+}
+
+.objectivo .objectivo-img img:hover{
+
+    transform: scale(1.1);
+
+}
+
+.objectivo .objectivo-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.objectivo p{
+
+    text-align: start;
+    font-weight:normal;
+    line-height: 30px;
+    font-size: 16pt;
+    color: #000000;
+
+}
+
+
+ .beneficios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(31, 174, 231);
+    height: 655px;
+    width: 100%;
+    padding: 50px;
+    margin: 200px 0px 0px 0px;
+}
+
+.beneficios .lista{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    gap: 20px; 
+
+
+}
+
+.beneficios .imagem{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+
+}
+
+.beneficios .imagem img{
+    width: 600px;
+    transition: .5s;
+
+}
+
+.beneficios .imagem img:hover{
+
+    transform: scale(1.1);
+
+}
+
+.beneficios h2{
+
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0px 10px;
+
+}
+
+.beneficios h2::after{
+
+    content: "";
+    background-color:  #d4e825;;
+    height: 5px;
+    width: 5%;
+    display: block;
+    margin: 4px auto;
+    transition: .7s;
+
+}
+
+.beneficios h2:hover::after{
+
+    width: 100%;
+}
+
+.beneficios li{
+    transition: .5s;
+    font-size: 18pt;
+    margin: 0px 0px 15px 25px;
+    color: white;
+    width: 600px;
+}
+
+.beneficios li:hover{
+    transform: scale(1.1);
+    margin-left: 50px;
+}
+
+.beneficios li::after{
+
+    content: "";
+    background-color:  #484848;;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 4px 0px;
+    transition: .7s;
+    opacity: 0%;
+
+}
+
+.beneficios li:hover::after{
+
+    width: 65%;
+    opacity: 30%;
+}
+
+.beneficios a{
+    text-align: center;
+    margin: 10px;
+    width: 500px;
+}
+
+.planos{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 100px 0px;
+    padding: 200px 100px;
+    
+}
+
+
+
+.p1, .p2, .p3{
+
+    background-color: rgb(46, 177, 229);
+    padding: 15px;
+    border-radius: 15px;
+    transition: .5s;
+    text-align: center;
+    width: 450px;
+    height: 650px;
+    animation: animate-outline .7s ease-out infinite;
+}
+
+.p1 h1, .p2 h1, .p3 h1{
+    color: #fff;
+    padding: 20px 0px ;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+   
+}
+
+
+.p1 ul li, .p2 ul li, .p3 ul li {
+    margin-bottom: 10px;
+    font-size: 14pt;
+    color: white;
+    text-align: center;
+
+}
+
+
+.p1:hover{
+
+    margin-top: -50px;
+    margin-bottom: 50px;
+    background-color: rgba(61, 166, 246, 0.934);
+}
+
+.p2:hover{
+
+    margin-top: -50px;
+    margin-bottom: 50px;
+    background-color: rgba(61, 166, 246, 0.934);
+}
+
+.p3:hover{
+
+    margin-top: -50px;
+    margin-bottom: 50px; 
+    background-color: rgba(61, 166, 246, 0.934);
+}
+
+
+.pqct{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(31, 174, 231);
+    color: white;
+    margin-bottom: 10px;
+
+
+}
+
+.pqct img{
+
+    width: 700px;
+    height: 350px;
+    transition: .5s;
+}
+
+.pqct img:hover{
+
+    transform: scale(1.1);
+
+}
+
+
+.pqct p{
+    color: white;
+    font-size: 18pt;
+    line-height: 25px;
+
+}
+.pqct h1{
+    color: white;
+    padding: 20px 0px;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+
+
+.idea{
+
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    text-align: center;
+    background-color: #b4b2b2e0;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.idea h1{
+    
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
+
+.idea a {
+
+    padding: 18px ;
+    border-radius: 5px;
+     
+}
+
+@keyframes animate-outline{
+
+    from{
+        outline: 0px solid  rgba(25, 167, 238, 0.918);
+
+    }
+
+    to {
+        outline: 10px solid  rgba(36, 122, 234, 0.255);
+
+    }
+}
+
+
+.divdown{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items:stretch;
+    padding: 100px;
+    width: 100%;
+    height: 500px;
+    text-align:start;
+    
+}
+
+
+
+.divdown h3{
+    
+    color: rgb(0, 0, 0);
+    padding: 15px 0px;
+    margin-bottom: 10px;
+
+}
+
+.divdown li{
+    margin-bottom: 10px;
+}
+
+.divdown ul li a{
+    
+    color: rgb(37, 37, 37);
+    font-size: 14pt;
+    transition: .3s;
+    
+}
+
+
+footer .cright{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+}
+
+
+ #subirTopo {
+    text-decoration: none;
+    bottom: 5px;
+    left: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14pt;
+    font-weight: 600;
+    position: fixed;
+
+}
+    
+
+/*Medias*/
+
+
+@media screen and (max-width: 1030px) {
+
+ 
+    #logo img{
+        width: 35px;
+        left: 20%;
+        float: left;
+        position: absolute;
+        top: 8%;
+    }
+    
+    
+
+    .welcome{
+        margin-top: 4%;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    
+    .welcome img{
+        height: 500px;
+        width: 100%;    
+    }
+    
+    
+    .welcome h1{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-top: -8%;
+        font-weight: 700;
+        font-size: 35pt;
+    
+    }
+    
+    
+    .objectivo img{
+        height: 350px;
+        width: 50%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    
+    .objectivo{
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 13%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    
+    .objectivo p{
+    
+        line-height: 1.2 ;
+        font-size: 14pt;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    
+    
+     .beneficios{
+        background-color: rgb(31, 174, 231);
+        height: 655px;
+        width: 100%;
+        
+        
+        
+    }
+    
+    .beneficios img{
+        width: 30%;
+        display: inline;
+        float: right;
+        margin-top: -27%;
+        margin-right: 10%;
+    }
+    
+    .beneficios h2{
+        margin-top: 10%;
+        color: #000000;
+        font-size: 28px;
+        font-weight: 600;
+        margin-left: 8%;
+        padding: 5%;
+    }
+    
+    .beneficios li{
+        margin-bottom: 7px;
+        font-size: 14pt;
+        margin-left: 7.5%;
+        color: white;
+    }
+    
+    .pqct img{
+        background-image: linear-gradient(to right, rgba(64, 135, 216, 0), rgb(37, 126, 222) );
+        width: 25%;
+        height: 200px;
+        float: right;
+        margin-top: 5%;
+        margin-right: 8%;
+    }
+    
+    .pqct{
+        background-image: linear-gradient(to right, rgb(33, 123, 226), rgb(37, 126, 222) );
+        width: 100%;
+        margin-top: 13%;
+        height: 320px;
+        color: white;
+        margin-bottom: -2.7%;
+    }
+    
+    
+    .pqct p{
+        margin-left: 12%;
+        font-size: 11pt;
+    }
+    .pqct h1{
+        padding: 3%;
+        margin-left: 10%;
+        font-size: 16pt;
+    }
+    
+
+    .idea h1{
+        font-size: 24pt;
+    }
+
+    #ctd{
+        font-size: 14pt;
+    }
+
+    .divdown h3{
+        font-size: 16pt;
+    }
+
+    .divdown a {
+        font-size: 14pt;
+    }
+    
+
+}
+
+@media screen and (max-width: 1280px) {
+
+ 
+    #logo img{
+        width: 35px;
+        left: 20%;
+        float: left;
+        position: absolute;
+        top: 8%;
+    }
+
+}
+
+@media screen and (max-width:920px) and (min-width:900px) {
+    
+    .up p{
+        font-size: 12pt;
+    }
+
+    .links a{
+        font-size: 12pt;
+    }
+
+    .objectivo p{
+        font-size: 18pt;
+
+    }
+
+    .beneficios ul li{
+        font-size: 18pt;
+
+    }
+
+    .planos ul li{
+        font-size: 16pt;
+
+    }
+
+    .pqct p{
+        font-size: 12pt;
+    }
+
+    .welcome h1{
+        font-size: 26pt;
+    }
+
+    
+}
+
+
+@media (max-width: 650px){
+    
+    .up{
+        position: relative;
+        height: 25px;
+
+    }
+
+    .ct img{
+        display: none;
+        
+       
+    }
+    
+    .ct p{
+        padding: 7px;
+        
+    }
+    
+
+    
+    #one, #two{
+        float: right;
+        font-size: 10pt;
+        margin-top: 1%;
+        
+    }
+
+    #two{
+        float: left;
+    }
+    
+    #logo img{
+        width:8%;
+        left: 5%;
+        float: left;
+        position: absolute;
+        top: 1%;
+    }
+    
+    .menu{
+        position: relative;
+        z-index: 1000;
+        width: 100%;
+        top: 8px;
+        height: 40px;
+        font: normal bold 6px / 10px "Roboto", Helvetica, Arial, Verdana, sans-serif;
+    }
+
+    .links {
+        float: right;
+        margin-right: 25%;
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        padding: 10px;
+            
+    }
+    
+    .links a{
+        margin-left: 10px;
+        font-size: 12pt;
+    }
+
+
+    .welcome{
+        margin-top: 4%;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    
+    .welcome img{
+        height: 500px;
+        width: 100%;    
+    }
+    
+    
+    .welcome h1{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-top: -12%;
+        font-weight: 700;
+        font-size: 30pt;
+    
+    }
+    
+    
+    .objectivo img{
+        height: 300px;
+        width: 60%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    
+    .objectivo{
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 13%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+        
+     .beneficios{
+        background-color: rgb(31, 174, 231);
+        height: 655px;
+        width: 100%;
+        
+    }
+    
+    .beneficios img{
+        width: 45%;
+        display: inline;
+    
+        margin-top: 0%;
+        margin-right: 25%;
+        
+    }
+    
+    .beneficios h2{
+        margin-top: 10%;
+        color: #000000;
+        font-size: 28px;
+        font-weight: 600;
+        margin-left: 8%;
+        padding: 5%;
+    }
+    
+    .beneficios li{
+        margin-bottom: 7px;
+        font-size: 14pt;
+        margin-left: 7.5%;
+        color: white;
+    }
+    
+
+    .pqct img{
+        background-image: linear-gradient(to right, rgba(64, 135, 216, 0), rgb(37, 126, 222) );
+        width: 30%;
+        height: 180px;
+        float: right;
+        margin-top: 5%;
+        margin-right: 6%;
+    }
+    
+
+    .pqct p{
+        margin-top: -1%;
+        margin-left: 5%;
+        font-size: 11pt;
+    }
+    .pqct h1{
+        padding: 3%;
+        margin-left: 3%;
+        font-size: 16pt;
+    }
+
+ 
+    .divdown{
+        margin-top: 2px;
+        width: 100%;
+        height: 350px;
+        background-image: linear-gradient(to right, rgb(43, 102, 170), rgb(9, 75, 146) );
+    }
+    
+    .divdown h3{
+        color: white;
+        font-size: 15px;
+    }
+    
+    .divdown #links{
+        margin-top: 0%;
+        margin-left: 1%;
+        padding: 5%;
+        margin-bottom: -4%;
+    }
+       
+    .divdown ul li a{
+        color: rgb(37, 37, 37);
+        text-decoration: none;
+        margin-left: 2%;
+        font-size: 15px;
+        
+    }
+   
+    .idea h1{
+        padding: 45px; 
+        font-size: 20pt;
+    
+    }
+    
+    .idea a{
+        padding: 18px;
+        border-radius: 3px;
+        font-weight: 700;
+    }
+       
+    
+    .whatsapp-link {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 25px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+    }
+    
+    .fa-whatsapp {
+        margin-top:10px;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .welcome h1{
+        font-size: 24pt;
+        margin-top: -14%;
+    }
+
+    .objectivo img{
+        height: 250px;
+        width: 70%;
+
+    }
+
+    .pqct img{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .up{
+        display: none;
+
+    }
+
+    .menu a{
+        font-size: 11pt;
+        font-weight: 700;
+    }
+
+    .links{
+        margin-right: 30%;
+    }
+
+    .welcome{
+        margin-top: 4%;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    
+    .welcome img{
+        height: 400px;
+        width: 100%;    
+    }
+    
+    .welcome h1{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-top: -15%;
+        font-weight: 700;
+        font-size: 20pt;
+    
+    }
+    
+    
+    .objectivo img{
+        height: 250px;
+        width: 90%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+        
+      
+    .beneficios img{
+        width: 65%;
+        display: inline;
+        margin-top: 0%;
+        margin-right: 15%;
+        
+    }
+
+    .beneficios h2{
+        font-size: 15pt;
+    }
+
+    .beneficios ul li{
+        margin-left: 0%;
+
+    }
+    
+   
+    .pqct{
+        background-image: linear-gradient(to right, rgb(33, 123, 226), rgb(37, 126, 222) );
+        width: 100%;
+        margin-top: 13%;
+        height: 320px;
+        color: white;
+        margin-bottom: -4%;
+    }
+
+    .pqct img{
+        background-image: linear-gradient(to right, rgba(64, 135, 216, 0), rgb(37, 126, 222) );
+        width: 30%;
+        height: 180px;
+        float: right;
+        margin-top: 5%;
+        margin-right: 6%;
+        display: none;
+    }
+    
+
+    .pqct p{
+        margin-top: -10px;
+        margin-left: 15px;
+        font-size: 11pt;
+    }
+    .pqct h1{
+        padding: 5px;
+        margin-left: 15px;
+        font-size: 16pt;
+    }
+
+    
+    .divdown h3{
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+    }
+    
+    .divdown #links{
+        margin-top: 0%;
+        margin-left: 1%;
+        padding: 5%;
+        margin-bottom: -5%;
+    }
+
+    .divdown #contacto{
+        margin-top: -4%;
+        margin-left: 1%;
+        padding: 5%;
+        margin-bottom: -5%;
+        display: block;
+    }
+    
+       
+    .divdown ul li a{
+        color: rgb(37, 37, 37);
+        text-decoration: none;
+        margin-left: 2%;
+        font-size: 15px;
+        
+    }
+
+    .divdown #tel, #mail{
+        display: block;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 310px) {
+
+ 
+    .menu a{
+        font-size: 10pt;
+        font-weight: 700;
+        margin-right: 5px;
+    }
+
+    .links{
+
+        margin-right: 30%;
+    }
+
+    .welcome h1{
+        font-size: 18pt;
+    }
+
+
+    .objectivo p{
+        font-size: 12pt;
+
+    }
+
+    .beneficios ul li{
+        font-size: 13pt;
+    }
+
+    .pqct h1{
+        font-size: 14pt;
+    }
+
+    .pqct p{
+        font-size: 10pt;
+    }
+
+    
+}
+
+@media screen and (max-width: 280px) {
+
+    #logo img{
+        width: 8%;
+        left: 5%;
+        float: left;
+        position: absolute;
+        top: 20%;
+    }
+    
+    .welcome{
+        margin-bottom: 10%;
+    }
+    
+    .welcome img{
+        height: 350px;
+    }
+
+    .welcome h1{
+        font-size: 15pt;
+        margin-top: -20%;
+    }
+
+    .objectivo p{
+        font-size: 10pt;
+    }
+
+    .beneficios h2{
+        font-size: 13pt;
+        text-align: center;
+        margin: 0;
+    }
+
+    .beneficios ul li{
+        font-size: 12pt;
+        margin: 0;
+    }
+
+    .beneficios img{
+        width: 90%;
+        margin-right: 2%;
+    }
+
+    .planos ul li{
+        font-size: 10pt;
+    }
+
+    .pqct h1{
+        font-size: 12pt;
+        margin-left: 0;
+    }
+
+    .pqct p{
+        font-size: 9pt;
+        margin-left: 5px;
+    }
+
+    .idea h1{
+        font-size: 16pt;
+    }
+
+    #ctd{
+        font-size: 11pt;
+    }
+
+}
